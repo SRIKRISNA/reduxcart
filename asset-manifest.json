@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reduxcart/static/css/main.4cb69276.css",
+    "main.js": "/reduxcart/static/js/main.cbdd67d1.js",
+    "static/js/496.3f6f255a.chunk.js": "/reduxcart/static/js/496.3f6f255a.chunk.js",
+    "index.html": "/reduxcart/index.html",
+    "main.4cb69276.css.map": "/reduxcart/static/css/main.4cb69276.css.map",
+    "main.cbdd67d1.js.map": "/reduxcart/static/js/main.cbdd67d1.js.map",
+    "496.3f6f255a.chunk.js.map": "/reduxcart/static/js/496.3f6f255a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cb69276.css",
+    "static/js/main.cbdd67d1.js"
+  ]
+}

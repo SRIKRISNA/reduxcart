@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import {remove} from '../store/cartSlice';
+import './my.css';
 
 const Cart =()=>{
     const products = useSelector(state => state.cart);
@@ -14,8 +15,8 @@ const Cart =()=>{
     }
 
     const cards = products.map(product => (
-        <div key={product.id} className="col-md-3" style={{marginBottom:"20px"}}>
-            <Card  style={{ width: '18rem' }}  className='h-100'>
+        <div key={product.id} style={{marginBottom:"20px"}}>
+            <Card  style={{ width: '18rem' }}  className='h-100 cardOnly'>
                 <div className="text-center">
                     <Card.Img variant="top" src={product.image} style={{ width: "100px", height:"130px" }} />
                 </div>
@@ -30,10 +31,13 @@ const Cart =()=>{
         </div>
     ))
     return(
-        <>
-            <h2>My Cart Items</h2>
-            {cards}
-        </>
+        <div className='productsview'>
+            <h3>My Cart Items</h3>
+
+            <div className="allProducts">
+                {cards}
+            </div>
+        </div>
     )
 }
 

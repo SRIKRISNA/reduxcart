@@ -35,10 +35,10 @@ const Product = () => {
     }
 
     const cards = products.map(product => (
-        <div key={product.id} className="col-md-3" style={{marginBottom:"20px"}}>
-            <Card style={{ width: '18rem' }}  className='h-100'>
+        <div key={product.id} className="fullItem" style={{marginBottom:"20px"}}>
+            <Card style={{ width: '18rem' }}  className='h-100 cardOnly'>
                 <div className="text-center">
-                    <Card.Img variant="top" src={product.image} style={{ width: "100px", height:"130px" }} />
+                    <Card.Img className='product-img' variant="top" src={product.image} style={{ width: "100px", height:"130px", marginTop:'20px'}} />
                 </div>
                 <Card.Body>
                     <Card.Title>{product.title}</Card.Title>
@@ -51,9 +51,10 @@ const Product = () => {
         </div>
     ))
     return (
-        <div>
-            Product Dashboard
-            <div className="row">
+        <div className='productsview'>
+            <h3>My Store Products</h3>
+
+            <div className="allProducts">
                 {cards}
             </div>
         </div>

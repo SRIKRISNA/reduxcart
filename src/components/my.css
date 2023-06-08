@@ -1,0 +1,15 @@
+.navbar>.container-fluid{
+    padding:0 80px;
+}
+.productsview h3{
+    padding: 10px 0;
+    text-decoration: underline rgb(212, 209, 209);
+}
+.productsview .allProducts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cardOnly:hover{
+    background-color: rgb(241, 241, 241);
+}

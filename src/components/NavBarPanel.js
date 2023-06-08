@@ -3,12 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import './my.css';
 
 const NavBarPanel = () => {
     const cartProducts = useSelector(state => state.cart);
 
     return (
-        <>
+        <div className='headerPanel'>
             {/* <Navbar bg="dark" variant="dark"> */}
             {/* <Navbar bg="primary" variant="dark"> */}
             <Navbar bg="light" variant="light">
@@ -26,7 +27,7 @@ const NavBarPanel = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </>
+        </div>
     )
 }
 

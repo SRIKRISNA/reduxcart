@@ -14,7 +14,7 @@ const NavBarPanel = () => {
             {/* <Navbar bg="primary" variant="dark"> */}
             <Navbar bg="light" variant="light">
                 <Container fluid>
-                    <Navbar.Brand href="#home">My Store</Navbar.Brand>
+                    <Navbar.Brand to='/' as={Link}>My Store</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link to='/' as={Link}>Products</Nav.Link>
                         {/* <Nav.Link href="#features">Features</Nav.Link> */}
